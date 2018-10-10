@@ -1,11 +1,11 @@
 // ==================== COLORS =====================
 // White
 @white: #fff;
-@white_00: fade(@white, 00%); // rgba(225, 255, 255, 0);
+@white_00: fade(@white, 0%); // rgba(225, 255, 255, 0);
 
 // Black
 @black: #000;
-@black_00: fade(@black, 00%); // rgba(0, 0, 0, 0);
+@black_00: fade(@black, 0%); // rgba(0, 0, 0, 0);
 
 // Gray
 @gray: #323232;
@@ -16,23 +16,24 @@
 
 // Blue
 @blue: #004a7c;
-@blue-light: #00b7de;
-@blue-dark: #172a2c;
-@blue-darker: #10232e;
+@blue-dark: #103358;
+
+// Pink
+@pink: #f76397;
 
 
 // ==================== TEXT COLORS ====================
 @text-color-base: @gray-dark;
 
 // Link style
-@link-color: @blue;
-@link-color-hover: @blue-dark;
-@link-color-active: @blue-dark;
+@link-color: @white;
+@link-color-hover: @white;
+@link-color-active: @white;
 
 // ==================== BACKGROUND ======================
 @bg-base: @white;
 @bg-header: @blue;
-@bg-footer: @gray;
+@bg-footer: @blue;
 
 // ==================== FONT FAMILY ===================
 @font-serif: serif;
@@ -84,6 +85,7 @@
 
 // ==================== BORDERS =======================
 @border-color-base: @gray-border;
+@border-color-blue: @blue-dark;
 @border-width-base: 1px;
 
 @border-style-solid: solid;

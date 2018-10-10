@@ -1,6 +1,11 @@
 .header {
     background-color: @bg-header;
     height: @header-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     
     .wrapper {
         display: flex;
@@ -10,35 +15,102 @@
     }
 
     &__left-side {
-        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__right-side {
-        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
 .logo {
-    line-height: 20px;
+    line-height: 2em;
     &__img {
         display: block;
         float: left;
     }
     &__name {
         color: @white;
-        font-size: 20px;
+        font-size: @font-size20;
         font-weight: bold;
         margin-left: 8px;
         text-transform: uppercase;
     }
 }
 
-.lang {
-    &__item {
+.navbar {
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2em;
+    }
 
+    &__item {
+        margin: 0 8px;
     }
 
     &__link {
+        color: @white;
+        font-size: @font-size16;
 
+        &:hover {
+            border-bottom: 2px solid @white; 
+        }
+    }
+}
+
+.lang {
+    &__link {
+        font-size: @font-size16;
+        margin: 0 8px;
+
+        &:hover {
+            border-bottom: 1px solid @white;
+        }
+    }
+}
+
+.notification {
+    &__link {
+        font-size: @font-size16;
+        margin: 0 8px;
+        position: relative;
+    }
+
+    &__count {
+        background-color: @pink;
+        border-radius: 4px;
+        color: @white;
+        display: block;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 0 5px; 
+        position: absolute;
+        top: -10px;
+        right: -8px;
+        min-width: 10px;
+        height: 20px; 
+    }
+}
+
+.profile {
+    &__link {
+        font-size: @font-size16;
+        margin: 0 8px;
+        
+        &:hover {
+            border-bottom: 1px solid @white;
+        }
     }
 }

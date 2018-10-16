@@ -13,13 +13,16 @@ class Wallet extends React.Component{
                                     <button className='btn btn-transparent bills__btn'><i className='icon-cog'></i>Настройки</button>
                                     <ul className='bills__list'>
                                         <li className='bills__item'>
-                                            <div className='bills__currency'>
-                                                <div className='bills__label'>Доллар США, USD</div>
-                                                <div className='bills__switch'>
-                                                    <input type='checkbox' className='bills__checkbox' id='billsCheckbox_1' />
-                                                    <label className='bills__checkbox-label' for='billsCheckbox_1'></label>
-                                                </div>
-                                            </div>
+                                            <input type='checkbox' className='bills__checkbox' id='billsCheckbox_1' />
+                                            <label className='bills__checkbox-label' for='billsCheckbox_1'>Доллар США, USD</label>
+                                        </li>
+                                        <li className='bills__item'>
+                                            <input type='checkbox' className='bills__checkbox' id='billsCheckbox_2' />
+                                            <label className='bills__checkbox-label' for='billsCheckbox_2'>Доллар США, USD</label>
+                                        </li>
+                                        <li className='bills__item'>
+                                            <input type='checkbox' className='bills__checkbox' id='billsCheckbox_3' />
+                                            <label className='bills__checkbox-label' for='billsCheckbox_3'>Доллар США, USD</label>
                                         </li>
                                     </ul>
                                 </div>
@@ -36,6 +39,7 @@ class Wallet extends React.Component{
                                         <th>...</th>
                                     </tr>
                                 </thead>
+
                                 <tbody>
                                     <tr>
                                         <td>USD</td>

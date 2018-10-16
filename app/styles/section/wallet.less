@@ -20,7 +20,10 @@
             font-size: @font-size14;
             height: 32px;
             line-height: 32px;
-            margin-left: 8px;
+            
+            &:first-child {
+                margin-right: 8px;
+            }
         }
     }
 
@@ -78,6 +81,13 @@
         line-height: 32px;
         transition: color .5s, border .5s;
         .icon-select;
+
+        &.active {
+            background-color: @white;
+            border: 1px solid @gray;
+            &:before, &:after {background-color: @gray;}
+            ul {display: block;}
+        }
     }
 
     &__total-value {
@@ -86,10 +96,23 @@
 
     &__total-list {
         display: none;
+        background-color: @white;
+        border: 1px solid @gray;
+        border-radius: @border-radius-base;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        left: -1px;
+        right: -1px;
+        
     }
 
-    &__total-item {
-
+    &__total-list-item {
+        font-size: @font-size14;
+        padding: 0 10px;
+        &:hover {
+            background-color: #edeff2;
+        }
     }
 }
 
@@ -97,7 +120,6 @@
     &__btn {
         padding-right: 25px;
         position: relative;
-        margin: 0;
         i {margin-right: 5px;}
         .icon-select;
     }

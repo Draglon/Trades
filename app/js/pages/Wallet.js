@@ -104,7 +104,7 @@ class Wallet extends React.Component{
                             </table>
                             <div className='wallet__total'>
                                 <div className='wallet__total-sum'>Итого: <span>0.23210045</span></div>
-                                <div className='wallet__total-select'>
+                                <div className='wallet__total-select active'>
                                     <span className='wallet__total-value'>BTC</span>
                                     <ul className='wallet__total-list'>
                                         <li className='wallet__total-list-item'>BTC</li>

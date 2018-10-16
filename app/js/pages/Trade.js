@@ -7,8 +7,14 @@ class Trade extends React.Component{
                 <section className=''>
                     <div className='wrapper'>
                         <h2>Торги</h2>
+                        <div className='main-ticket'>
+                            <label className='main-ticket__pair'>BTC/USD</label><span className='text-negative'>Low:</span> 6544.51 USD / <span className='text-positive'>High:</span> 7339.8 USD <span className='text-positive'>0.63%</span>
+                        </div>
+
                         <div className=''>
-                            <label>BTC/USD</label><span className='low'>Low:</span> 6544.51 USD / <span className='high'>High:</span> 7339.8 USD <span className='text-blue'>0.63%</span>
+                            <div className=''>
+                                
+                            </div>
                         </div>
                     </div>
                 </section>

@@ -1,0 +1,154 @@
+.wallet {
+    margin: 5em 0;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        button {
+            font-size: @font-size14;
+            height: 32px;
+            line-height: 32px;
+            margin-left: 8px;
+        }
+    }
+
+    &__table {
+        td, th {
+            text-align: left;
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+
+        tr {
+            &:nth-child(even) {
+                background-color: #edeff2;
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    border-bottom: 1px solid @gray-border;
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        button {
+            margin-left: 8px;
+        }
+    }
+
+    // total
+    &__total {
+        // float: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+    }
+
+    &__total-sum {
+        font-size: @font-size16;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    &__total-select {
+        border: 1px solid @border-color-base;
+        border-radius: @border-radius-base;
+        cursor: pointer;
+        padding-right: 20px;
+        padding-left: 10px;
+        position: relative;
+        height: 32px;
+        line-height: 32px;
+        transition: color .5s, border .5s;
+
+        &:hover {
+            border: 1px solid @gray;
+            color: @gray;
+            &:before, &:after {
+                background-color: @gray;
+            }
+        }
+
+        &:before, &:after {
+            content: '';
+            background-color: @gray-border;
+            position: absolute;
+            top: 50%;
+            width: 8px;
+            height: 1px;
+            transition: background-color .5s, border .5s;
+        }
+        &:before {
+            right: 5px;
+            transform: rotate(-45deg);
+        }
+        &:after {
+            right: 10px;
+            transform: rotate(45deg);
+        }
+    }
+
+    &__total-value {
+        font-size: @font-size14;
+    }
+
+    &__total-list {
+        display: none;
+    }
+
+    &__total-item {
+
+    }
+}
+
+
+
+
+.bills {
+
+    &__btn {
+
+    }
+
+    &__list {
+        display: none;
+    }
+
+    &__item {
+
+    }
+
+    &__currency {
+
+    }
+
+    &__label {
+
+    }
+
+    &__switch {
+
+    }
+
+    &__checkbox-label {
+
+    }
+}

@@ -43,32 +43,40 @@ input[type="checkbox"] + label {
     display: block;
     position: relative;
     padding-left: 2em;
+
     &:before, &:after {
         content: ' ';
         position: absolute;
         top: 0;
         left: 0;
     }
+
     &:before {
-        border: 1px solid @white;
-        border-radius: 3px;
-        width: 17px;
-        height: 17px;
+        background-color: @gray-light;
+        border-radius: 7px;
+        width: 24px;
+        height: 14px;
+        transition: background-color .3s ease;
     }
+
     &:after {
-        display: none;
+        background-color: @white;
+        border-radius: 50%;
+        top: 2px;
+        left: 2px;
+        width: 10px;
+        height: 10px;
+        transition: left .3s ease;
     }
 }
 
 input[type="checkbox"]:checked + label {
+    &:before {
+        background-color: @blue;
+    }
+
     &:after {
-        border-bottom: 2px solid @white;
-        border-left: 2px solid @white;
-        display: block;
-        top: 4px;
-        left: 6px;
-        width: 5px;
-        height: 5px;
+        left: 12px;
     }
 }
 
@@ -76,6 +84,7 @@ input[type="checkbox"]:checked + label {
 input[type=submit], button, .btn {
     background: @btn-bg;
     border-radius: @btn-border-radius;
+    box-shadow: none;
     cursor: pointer;
     display: inline-block;
     font-size: @btn-font-size;
@@ -86,11 +95,16 @@ input[type=submit], button, .btn {
     line-height: @btn-height;
     text-align: center;
     white-space: nowrap;
+    transition: background-color .5s, border .5s, color .5s;
 }
 input[type=submit]:hover, button:hover, button:focus {
     cursor: pointer;
 }
-
+.btn--small {
+    font-size: @font-size14;
+    line-height: 30px;
+    height: 32px; 
+}
 .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-dark {
   color: @btn-color;
 }
@@ -132,6 +146,16 @@ input[type=submit]:hover, button:hover, button:focus {
     &:hover {
         background-color: @btn-danger-bg-hover;
         border: @btn-danger-border-color-hover;
+    }
+}
+// Button Transparent
+.btn-transparent {
+    border: 1px solid @gray-light;
+    color: @gray-light;
+    transition: border-color .3s, color .3s;
+    &:hover {
+        border-color: @gray;
+        color: @gray;
     }
 }
 

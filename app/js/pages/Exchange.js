@@ -45,7 +45,7 @@ class Exchange extends React.Component{
                     </div>
                 </section>
 
-                <section className='history-exchange'>
+                <section className='section history-exchange'>
                     <div className='wrapper'>
                         <h2 className='history-exchange__title'>История обмена</h2>
                         <table className='history-exchange__table'>

@@ -149,16 +149,32 @@
         display: flex;
         justify-content: space-between;
         align-content: center;
-        padding: 5px 10px;
         &:hover {
             background-color: #edeff2;
+        }
+
+        input[type='checkbox']:checked + label {
+            &:after {
+                left: 17px !important;
+            }
         }
     }
 
     &__checkbox-label {
+        display: block;
         font-size: @font-size14;
-        // max-width: 150px;
+        padding: 5px 10px;
         overflow: hidden;
         white-space: nowrap;
+        width: 100%;
+
+        &:before {
+            top: ~'calc(50% - 7px)' !important;
+            left: 5px !important;
+        }
+        &:after {
+            top: ~'calc(50% - 5px)' !important;
+            left: 7px !important;
+        }
     }
 }

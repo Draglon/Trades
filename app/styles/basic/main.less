@@ -20,12 +20,14 @@ body {
 }
 figure {display: block;}
 img {border: none;display: block;}
-h1, h2, h3, h4, h5 {font-weight: @font-weight-base;}
 h1 {font-size: @font-size-h1;}
 h2 {font-size: @font-size-h2;}
 h3 {font-size: @font-size-h3;}
 h4 {font-size: @font-size-h4;}
+h5 {font-size: @font-size-h5;}
+h6 {font-size: @font-size-h6;}
 p {font-size: @font-size-p;}
+label {font-size: @font-size-label;}
 a {
   color: @link-color;
   text-decoration: none;
@@ -52,6 +54,7 @@ ul {list-style-type: none;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 .wrapper {
   margin: 0 auto;
@@ -67,3 +70,6 @@ ul {list-style-type: none;
   background-repeat: no-repeat;
   position: relative;
 }
+
+.text-positive {color: @text-positive;}
+.text-negative {color: @text-negative;}

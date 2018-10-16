@@ -4,14 +4,15 @@ input[type=email],
 input[type=tel],
 textarea,
 select {
-    border: 1px solid @black;
-    box-shadow: none;
+    border: @input-border-color;
+    border-radius: @input-border-radius;
     font-size: @input-font-size;
     font-family: @input-font-family;
-    font-weight: 300;
-    padding: 0 5px;
-    height: 40px;
-    width: 100%;
+    font-weight: @input-font-weight;
+    padding: @input-padding;
+    height: @input-height;
+    width: @input-width;
+    box-shadow: @input-shadow;
 }
 textarea {
     height: 8.5em;
@@ -73,24 +74,67 @@ input[type="checkbox"]:checked + label {
 
 // ---------------------- Buttons -----------------------
 input[type=submit], button, .btn {
-    background: none;
-    border: none;
+    background: @btn-bg;
+    border-radius: @btn-border-radius;
     cursor: pointer;
     display: inline-block;
     font-size: @btn-font-size;
     font-family: @btn-font-family;
-    font-weight: 400;
-    letter-spacing: -.05em;
+    font-weight: @btn-font-weight;
     padding: @btn-padding;
     height: @btn-height;
     line-height: @btn-height;
     text-align: center;
-    text-transform: uppercase;
     white-space: nowrap;
 }
 input[type=submit]:hover, button:hover, button:focus {
     cursor: pointer;
 }
+
+.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-dark {
+  color: @btn-color;
+}
+// Button Primary
+.btn-primary {
+    background-color: @btn-primary-bg;
+    border: @btn-primary-border-color;
+    
+    &:hover {
+        background-color: @btn-primary-bg-hover;
+        border: @btn-primary-border-color-hover;
+    }
+}
+// Button Success
+.btn-success {
+    background-color: @btn-success-bg;
+    border: @btn-success-border-color;
+    
+    &:hover {
+        background-color: @btn-success-bg-hover;
+        border: @btn-success-border-color-hover;
+    }
+}
+// Button Warning
+.btn-warning {
+    background-color: @btn-warning-bg;
+    border: @btn-warning-border-color;
+    
+    &:hover {
+        background-color: @btn-warning-bg-hover;
+        border: @btn-warning-border-color-hover;
+    }
+}
+// Button Danger
+.btn-danger {
+    background-color: @btn-danger-bg;
+    border: @btn-danger-border-color;
+    
+    &:hover {
+        background-color: @btn-danger-bg-hover;
+        border: @btn-danger-border-color-hover;
+    }
+}
+
 @media screen and (max-width: 767px) {
     input[type=submit], button, .btn {
         font-size: @btn-font-size-mobile;
@@ -98,21 +142,12 @@ input[type=submit]:hover, button:hover, button:focus {
 }
 
 .form {
-    width: 300px;
     
-    &_field {
-        width: 50%;
-        float: left;
+    &__field {
+        margin-bottom: 1.5em;
     }
 
-    &_btns {
-        width: 50%;
-        float: left;
-    }
-}
+    &__btns {
 
-.list {
-    clear: both;
-    font-size: 2em;
-    padding: 1em;
+    }
 }

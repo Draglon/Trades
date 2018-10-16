@@ -10,20 +10,34 @@
 // Gray
 @gray: #323232;
 @gray-light: #999;
-@gray-lighter:#f7f7f7;
+@gray-lighter:#f5f5f5;
 @gray-dark: #414141;
-@gray-border: #c7c7c7;
+@gray-border: #cfcfcf;
 
 // Blue
 @blue: #004a7c;
+@blue-light: #28a5d4;
 @blue-dark: #103358;
 
 // Pink
 @pink: #f76397;
 
+// Green 
+@green: #00b19d;
+@green-dark: #009886;
+
+// Orange
+@orange: #ffaa00;
+@orange-light: #e69900;
+
+// Red
+@red: #ef5350;
+@red-light: #ed3c39;
 
 // ==================== TEXT COLORS ====================
 @text-color-base: @gray-dark;
+@text-positive: @blue;
+@text-negative: @red;
 
 // Link style
 @link-color: @white;
@@ -31,7 +45,7 @@
 @link-color-active: @white;
 
 // ==================== BACKGROUND ======================
-@bg-base: @white;
+@bg-base: @gray-lighter;
 @bg-header: @blue;
 @bg-footer: @blue;
 
@@ -72,11 +86,14 @@
 @font-size215: 21.5em;
 @font-size230: 23em;
 // tags
-@font-size-h1: @font-size60; // H1
-@font-size-h2: @font-size36; // H2
+@font-size-h1: @font-size36; // H1
+@font-size-h2: @font-size30; // H2
 @font-size-h3: @font-size24; // H3
-@font-size-h4: @font-size20; // H4
+@font-size-h4: @font-size18; // H4
+@font-size-h5: @font-size14; // H5
+@font-size-h6: @font-size12; // H6
 @font-size-p: @font-size18; // p
+@font-size-label: @font-size18; // label
 //@font-size-select: @font-size24; // select
 
 @font-weight-base: normal;
@@ -92,7 +109,7 @@
 @border-style-dotted: dotted;
 @border-style-dashed: dashed;
 
-@border-radius-base: 1em;
+@border-radius-base: 4px;
 @border-radius-half: 50%;
 
 @border-solid: @border-width-base @border-style-solid;
@@ -102,14 +119,35 @@
 @border-solid-base: @border-solid @border-color-base;
 
 // ==================== FORMS: Buttons =======================
-@btn-font-size: @font-size17;
+@btn-bg: none;
+@btn-border-radius: @border-radius-base;
+@btn-font-size: @font-size18;
 @btn-font-size-mobile: @font-size20;
 @btn-font-family: @font-family-opensans;
+@btn-font-weight: @font-weight-base;
 @btn-padding: 0 1em;
 @btn-height: 35px;
-// Btn blue
-@btn-blue-bg: @blue;
-@btn-blue-bg-hover: @blue;
+@btn-color: @white;
+// Btn primary
+@btn-primary-bg: @blue;
+@btn-primary-bg-hover: @blue-light;
+@btn-primary-border-color: 1px solid @blue;
+@btn-primary-border-color-hover: 1px solid @blue-light;
+// Btn success
+@btn-success-bg: @green;
+@btn-success-bg-hover: @green-dark;
+@btn-success-border-color: 1px solid @green;
+@btn-success-border-color-hover: 1px solid @green-dark;
+// Btn warning
+@btn-warning-bg: @orange;
+@btn-warning-bg-hover: @orange-light;
+@btn-warning-border-color: 1px solid @orange;
+@btn-warning-border-color-hover: 1px solid @orange-light;
+// Btn danger
+@btn-danger-bg: @red;
+@btn-danger-bg-hover: @red-light;
+@btn-danger-border-color: 1px solid @red;
+@btn-danger-border-color-hover: 1px solid @red-light;
 // Btn transparent
 @btn-trans-border: 1px solid @white;
 @btn-trans-bg: @white;
@@ -117,6 +155,14 @@
 // ==================== FORMS: Inputs =======================
 @input-font-size: @font-size18;
 @input-font-family: @font-family-opensans;
+@input-font-weight: @font-weight-base;
+@input-border-color: @border-solid-base;
+@input-border-radius: @border-radius-base;
+@input-padding: 0 10px;
+@input-height: 40px;
+@input-width: 100%;
+@input-shadow: none;
+
 @placeholder-color: @black;
 
 // ==================== HEADER =======================
@@ -124,3 +170,4 @@
 @header-height: 6em;
 
 // ==================== FOOTER =======================
+@footer-bg: @bg-footer;

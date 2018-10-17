@@ -14,6 +14,8 @@ var News = require('./pages/News.js');
 var Trade = require('./pages/Trade.js');
 var Exchange = require('./pages/Exchange.js');
 var Wallet = require('./pages/Wallet.js');
+var Settings = require('./pages/Settings.js');
+var Notifications = require('./pages/Notifications.js');
 var NotFound = require('./pages/NotFound.js');
 
 class App extends Component {
@@ -35,6 +37,8 @@ class App extends Component {
                             <Route path='/trade' component={Trade} />
                             <Route path='/exchange' component={Exchange} />
                             <Route path='/wallet' component={Wallet} />
+                            <Route path='/notifications' component={Notifications} />
+                            <Route path='/settings' component={Settings} />
                             <Route component={NotFound} />
                         </Switch>
                         <Footer />

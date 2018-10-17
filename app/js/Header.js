@@ -45,14 +45,19 @@ class Header extends React.Component {
                             </div>
 
                             <div className='notification'>
-                                <a className='notification__link' href='#' title='Notification'>
+                                <NavLink className='notification__link' to='/notifications' title='Notification'>
                                     <i className='icon-bell'></i>
                                     <span className='notification__count'>2</span>
-                                </a>
+                                </NavLink>
                             </div>
 
                             <div className='profile'>
-                                <a className='profile__link' href='#' title='Profile'>test321</a>
+                                <NavLink className='profile__link' to='/settings' title='Profile'>test321</NavLink>
+                                <nav className=''>
+                                    <ul className=''>
+                                        <li className=''></li>
+                                    </ul>
+                                </nav>
                             </div>
                         </nav>
                     </div>

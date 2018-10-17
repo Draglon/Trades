@@ -173,55 +173,149 @@ class Wallet extends React.Component{
 
                 <section className='section refill'>
                     <div className='wrapper'>
-                        <a className='back-link' href='#'>Вернуться к выбору валют</a>
-                        <h2 className='refill__title'>Пополнение счета</h2>
-                        <div className='refill__item'>
-                            <div className='payments'>
-                                <h3 className='payments__title'>Выберите способ пополнения баланса</h3>
-                                <div className='payments__lest'>
-                                    <div className='payments__item'>
-                                        <label className='payments__label' for='mastercard'>
-                                            <span className='payments__text'>Visa/MasterCard (Simplex)</span>
-                                            <input className='payments__input' type='checkbox' id='mastercard' />
-                                        </label>
+                        <header>
+                            <a className='back-link link-blue' href='#'><i className='icon-circle-left'></i>Вернуться к выбору валют</a>
+                            <h2 className='refill__title'>Пополнение счета</h2>    
+                        </header>
+                        <div className='refill__content'>
+                            <div className='refill__item'>
+                                <div className='payments'>
+                                    <h4 className='payments__title'>Выберите способ пополнения баланса</h4>
+                                    <div className='payments__list'>
+                                        <div className='payments__item'>
+                                            <input className='payments__input' type='radio' name='payments' id='mastercard' />
+                                            <label className='payments__label' htmlFor='mastercard'>
+                                                <span className='payments__label-text'>Visa/MasterCard (Simplex)</span>
+                                                <figure className='payments__figure'></figure>
+                                            </label>
+                                        </div>
+                                        <div className='payments__item'>
+                                            <input className='payments__input' type='radio' name='payments' id='skrill' />
+                                            <label className='payments__label' htmlFor='skrill'>
+                                                <span className='payments__label-text'>Skrill</span>
+                                                <figure className='payments__figure'></figure>
+                                            </label>
+                                        </div>
+                                        <div className='payments__item'>
+                                            <input className='payments__input' type='radio' name='payments' id='advcash' />
+                                            <label className='payments__label' htmlFor='advcash'>
+                                                <span className='payments__label-text'>AdvCash</span>
+                                                <figure className='payments__figure'></figure>
+                                            </label>
+                                        </div>
+                                        <div className='payments__item'>
+                                            <input className='payments__input' type='radio' name='payments' id='payeer' />
+                                            <label className='payments__label' htmlFor='payeer'>
+                                                <span className='payments__label-text'>Payeer</span>
+                                                <figure className='payments__figure'></figure>
+                                            </label>
+                                        </div>
+                                        <div className='payments__item'>
+                                            <input className='payments__input' type='radio' name='payments' id='neteller' />
+                                            <label className='payments__label' htmlFor='neteller'>
+                                                <span className='payments__label-text'>Neteller</span>
+                                                <figure className='payments__figure'></figure>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <div className='payments__item'>
-                                        <label className='payments__label' for='skrill'>
-                                            <span className='payments__text'>Skrill</span>
-                                            <input className='payments__input' type='checkbox' id='skrill' />
-                                        </label>
-                                    </div>
-                                    <div className='payments__item'>
-                                        <label className='payments__label' for='advcash'>
-                                            <span className='payments__text'>AdvCash</span>
-                                            <input className='payments__input' type='checkbox' id='advcash' />
-                                        </label>
-                                    </div>
-                                    <div className='payments__item'>
-                                        <label className='payments__label' for='payeer'>
-                                            <span className='payments__text'>Payeer</span>
-                                            <input className='payments__input' type='checkbox' id='payeer' />
-                                        </label>
-                                    </div>
-                                    <div className='payments__item'>
-                                        <label className='payments__label' for='neteller'>
-                                            <span className='payments__text'>Neteller</span>
-                                            <input className='payments__input' type='checkbox' id='neteller' />
-                                        </label>
+                                </div>
+                            </div>
+                            <div className='refill__item'>
+                                <div className='payments'>
+                                    <h4 className='payments__title'>Сгенерируйте адрес кошелька для пополнения вашего баланса</h4>
+                                    <div className='payments__deposit'>Минимальная сумма депозита 10 DOGE</div>
+                                    <ul className='payments__commission'>
+                                        <li className='payments__commission-item'>Минимальная 0.01 DASH</li>
+                                        <li className='payments__commission-item'>Комиссия 0%</li>
+                                    </ul>
+                                    <div className='payments__btns'>
+                                        <button className='btn btn-primary btn--small'>Создать адрес</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='refill__item'>
-                            <div className='payments'>
-                                <h3 className='payments__title'>Нужно пройти верификацию</h3>
-                                <div className='payments__deposit'>Минимальная сумма депозита 0.01 DASH</div>
-                                <ul className='payments__commission'>
-                                    <li className='payments__commission-item'>Минимальная 0.01 DASH</li>
-                                    <li className='payments__commission-item'>Комиссия 0%</li>
-                                </ul>
-                                <div className='payments__btns'>
-                                    <button className='btn btn-primary'>Создать адрес</button>
+                    </div>
+                </section>
+
+                <section className='section refill'>
+                    <div className='wrapper'>
+                        <header>
+                            <a className='back-link link-blue' href='#'><i className='icon-circle-left'></i>Вернуться к выбору валют</a>
+                            <h2 className='refill__title'>Вывод средств</h2>    
+                        </header>
+                        <div className='refill__content'>
+                            <div className='refill__item'>
+                                <div className='payments'>
+                                    <h4 className='payments__title'>Выберите способ вывода средств</h4>
+                                    <div className='payments__list'>
+                                        <div className='payments__item'>
+                                            <input className='payments__input' type='radio' name='payments' id='doge' />
+                                            <label className='payments__label' htmlFor='doge'>
+                                                <span className='payments__label-text'>DOGE</span>
+                                                <figure className='payments__figure'></figure>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='refill__item'>
+                                <div className='payments'>
+                                    <ul className='payments__commission'>
+                                        <li className='payments__commission-item'>Минимальная 300 DOGE</li>
+                                        <li className='payments__commission-item'>Максимальная 5000000 DOGE</li>
+                                        <li className='payments__commission-item'>Комиссия 1 Doge</li>
+                                    </ul>
+                                    <form className='form payments__form' action='' method='get'>
+                                        <div className='form__field'>
+                                            <label className='form__label'>Доступно для вывода</label>
+                                            <div className='form__field-input'>
+                                                <input type='text' value='3206.75824'/>
+                                                <span class='payments__coin'>DOGE</span>
+                                            </div>
+                                        </div>
+                                        <div className='form__field'>
+                                            <label className='form__label'>Сумма вывода</label>
+                                            <div className='form__field-input'>
+                                                <input type='text' value='300' />
+                                                <span class='payments__coin'>DOGE</span>
+                                            </div>
+                                        </div>
+                                        <div className='form__field'>
+                                            <label className='form__label'>Вы получите</label>
+                                            <div className='form__field-input'>
+                                                <input type='text' value='299' />
+                                                <span class='payments__coin'>DOGE</span>
+                                            </div>
+                                        </div>
+                                        <div className='form__field'>
+                                            <label className='form__label'>Остаток на счете</label>
+                                            <div className='form__field-input'>
+                                                <input type='text' value='2906.75824' />
+                                                <span class='payments__coin'>DOGE</span>
+                                            </div>
+                                        </div>
+                                        <div className='form__field'>
+                                            <label className='form__label'>Адрес кошелька</label>
+                                            <div className='form__field-input'>
+                                                <input type='text' />
+                                            </div>
+                                        </div>
+                                        {/* <div className='form__field'>
+                                            <div className='form__field-input'>
+                                                <input type='checkbox' id='saveAgree' />
+                                                <label className='form__label' htmlFor='saveAgree'>Сохранить в "Мои счета"</label>
+                                            </div>
+                                        </div>
+                                        <div className='form__field'>
+                                            <label className='form__label'>Название счета</label>
+                                            <div className='form__field-input'>
+                                                <input type='text' />
+                                            </div>
+                                        </div> */}
+                                    </form>
+                                    <div className='payments__btns'>
+                                        <button className='btn btn-primary btn--small'>Вывести</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

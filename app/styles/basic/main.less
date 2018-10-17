@@ -37,6 +37,15 @@ a {
   }
   &:active, &.active {color: @link-color-active;}
 }
+a.link-blue {
+  color: @link-primary-color;
+  text-decoration: none;
+  &:hover {
+    color: @link-primary-color-hover;
+    text-decoration: none;
+  }
+  &:active, &.active {color: @link-primary-color-active;}
+}
 ul {list-style-type: none;
   li {list-style-type: none;display: block;}
 }
@@ -81,3 +90,14 @@ ul {list-style-type: none;
 .text-left {text-align: left !important;}
 .text-right {text-align: right !important;}
 .text-center {text-align: center !important;}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  font-size: @font-size14;
+  line-height: 20px;
+
+  i {
+    margin-right: 5px;
+  }
+}

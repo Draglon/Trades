@@ -1,0 +1,29 @@
+.scrollbar {
+    & > div:nth-child(1) {}
+    & > div:nth-child(2) {
+        display: none;
+        & > div {
+            background-color: rgba(0, 0, 0, 0);
+            transition: background-color .3s;
+        }
+    }
+    & > div:nth-child(3) {
+        display: none;
+        & > div {
+            background-color: rgba(0, 0, 0, 0);
+            transition: background-color .3s;
+        }
+    }
+
+    &:hover {
+        & > div:nth-child(2) {
+            display: block;
+        }
+        & > div:nth-child(3) {
+            display: block;
+            & > div {
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}

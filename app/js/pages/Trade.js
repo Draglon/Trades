@@ -266,7 +266,7 @@ class Trade extends React.Component{
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th>Дата/время</th>
+                                                    <th>Дата</th>
                                                     <th>Операция</th>
                                                     <th>Цена</th>
                                                     <th>Количество</th>
@@ -480,7 +480,7 @@ class Trade extends React.Component{
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th>Дата/время</th>
+                                                    <th>Дата</th>
                                                     <th>Операция</th>
                                                     <th>Цена</th>
                                                     <th>Количество</th>

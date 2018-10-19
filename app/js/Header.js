@@ -27,9 +27,9 @@ class Header extends React.Component {
 
                     <div className='header__right-side'>
                         <nav className='header__nav'>
-                            <div className='lang'>
+                            {/* <div className='lang'>
                                 <a className='lang__link' href='#' title='Language'>Русский</a>
-                                {/* 
+                                
                                     <ul className='lang'>
                                         <li className='lang__item'>
                                             
@@ -41,8 +41,8 @@ class Header extends React.Component {
                                             
                                         </li>
                                     </ul>
-                                */}
-                            </div>
+                               
+                            </div> */}
 
                             <div className='notification'>
                                 <NavLink className='notification__link' to='/notifications' title='Notification'>

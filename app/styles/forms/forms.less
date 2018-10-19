@@ -1,6 +1,11 @@
 .form {
     &__field {
         margin-bottom: 1.5em;
+        &--border {
+            border-bottom: 1px solid @gray-border;
+            margin-bottom: 15px;
+            padding-bottom: 20px;
+        }
     }
 
     &__field-input {
@@ -24,5 +29,12 @@
         position: absolute;
         top: ~'calc(50% - 6px)';
         right: 10px;
+    }
+
+    &__example {
+        color: @gray-light;
+        font-size: @font-size12;
+        margin-top: 5px;
+        padding: 0 10px;
     }
 }

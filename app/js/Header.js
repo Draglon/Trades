@@ -59,6 +59,11 @@ class Header extends React.Component {
                                     </ul>
                                 </nav>
                             </div>
+
+                            <div className=''>
+                                <NavLink className='' to='/login'>Login</NavLink>
+                                <NavLink className='' to='/signup'>Signup</NavLink>
+                            </div>
                         </nav>
                     </div>
                 </div>

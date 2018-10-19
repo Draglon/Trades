@@ -27,6 +27,7 @@ class Trade extends React.Component{
 
                             <div className='trading__item'>
                                 <div className='tickets'>
+                                    <div className='tickets'></div>
                                     <nav className='tickets__top-pair'>
                                         <a className='tickets__btn active'>Избранное</a>
                                         <a className='tickets__btn'>BTC</a>
@@ -319,6 +320,7 @@ class Trade extends React.Component{
                                                 </tr>
                                             </tbody>
                                         </table>
+                                        <div className='orders__empty'>Нет информации для отображения</div>
                                         </Scrollbars>
                                     </div>
                                 </div>

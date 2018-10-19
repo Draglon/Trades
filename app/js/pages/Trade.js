@@ -165,8 +165,8 @@ class Trade extends React.Component{
                             <div className='trading__item'>
                                 <div className='market'>
                                     <ul className='market__nav'>
-                                        <li className='market__nav-item'></li>
-                                        <li className='market__nav-item'></li>
+                                        <li className='market__nav-item active'>По лимиту</li>
+                                        <li className='market__nav-item'>По рынку</li>
                                     </ul>
 
                                     <div className='market__forms'>
@@ -215,7 +215,7 @@ class Trade extends React.Component{
                                         </div>
 
                                         <div className='market__sell'>
-                                            <h4 class='market__title'>Продажа, ADA</h4>
+                                            <h4 className='market__title'>Продажа, ADA</h4>
                                             <form className='form'>
                                                 <div className='form__field'>
                                                     <label className='form__label'>Количество</label>
@@ -262,6 +262,21 @@ class Trade extends React.Component{
                             </div>
                             <div className='trading__item'>
                                 <div className='orders'>
+                                    <nav className='orders__nav'>
+                                        <ul className='orders__list'>
+                                            <li className='orders__item active'>Активные ордера</li>
+                                            <li className='orders__item'>История торгов</li>
+                                        </ul>
+
+                                        <div className='orders__cancel'>Отмена ордера
+                                            <ul className='orders__cancel-list'>
+                                                <li className='orders__cancel-item'></li>
+                                                <li className='orders__cancel-item'></li>
+                                                <li className='orders__cancel-item'></li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                    
                                     <div className='orders__table'>
                                         <table>
                                             <thead>
@@ -271,6 +286,7 @@ class Trade extends React.Component{
                                                     <th>Цена</th>
                                                     <th>Количество</th>
                                                     <th>Сумма</th>
+                                                    <th>&nbsp;</th>
                                                 </tr>
                                             </thead>
                                         </table>
@@ -283,6 +299,7 @@ class Trade extends React.Component{
                                                     <td>0.00037</td>
                                                     <td>1.27324037</td>
                                                     <td>0.00047109</td>
+                                                    <td><i className='icon-cross'></i></td>
                                                 </tr>
                                                 <tr>
                                                     <td>30.09 15:49</td>
@@ -290,6 +307,7 @@ class Trade extends React.Component{
                                                     <td>602.7230299</td>
                                                     <td>0.22300752</td>
                                                     <td>0.00047109</td>
+                                                    <td><i className='icon-cross'></i></td>
                                                 </tr>
                                                 <tr>
                                                     <td>30.09 14:58</td>
@@ -297,6 +315,7 @@ class Trade extends React.Component{
                                                     <td>0.00036701</td>
                                                     <td>2.74243094</td>
                                                     <td>0.00100649</td>
+                                                    <td><i className='icon-cross'></i></td>
                                                 </tr>
                                             </tbody>
                                         </table>

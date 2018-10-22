@@ -35,21 +35,23 @@ class App extends Component {
                 :
                     <div>
                         <Header />
-                        <Switch>
-                            <Route path='/' exact component={Home} />
-                            <Route path='/news' component={News} />
-                            <Route path='/trade' component={Trade} />
-                            <Route path='/exchange' component={Exchange} />
-                            <Route path='/wallet' component={Wallet} />
-                            <Route path='/notifications' component={Notifications} />
-                            <Route path='/settings' component={Settings} />
-                            <Route path='/login' component={Login} />
-                            <Route path='/signup' component={Signup} />
-                            <Route path='/forgot' component={ForgotPassword} />
-                            <Route path='/terms' component={TermsConditions} />
-                            <Route component={NotFound} />
-                        </Switch>
-                        <Footer />
+                        <div className='page'>
+                            <Switch>
+                                <Route path='/' exact component={Home} />
+                                <Route path='/news' component={News} />
+                                <Route path='/trade' component={Trade} />
+                                <Route path='/exchange' component={Exchange} />
+                                <Route path='/wallet' component={Wallet} />
+                                <Route path='/notifications' component={Notifications} />
+                                <Route path='/settings' component={Settings} />
+                                <Route path='/login' component={Login} />
+                                <Route path='/signup' component={Signup} />
+                                <Route path='/forgot' component={ForgotPassword} />
+                                <Route path='/terms' component={TermsConditions} />
+                                <Route component={NotFound} />
+                            </Switch>
+                            <Footer />
+                        </div>
                     </div>
                 }
             </Router>

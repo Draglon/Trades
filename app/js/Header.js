@@ -87,7 +87,7 @@ class Header extends React.Component {
                                                 <div>0</div>
                                             </li>
                                         </ul>
-                                        <NavLink className='profile__wallet_link' to='/wallet'>Перейти в кошелек<i className='icon-circle-right'></i></NavLink>
+                                        <NavLink className='profile__wallet-link' to='/wallet'>Перейти в кошелек<i className='icon-circle-right'></i></NavLink>
                                     </div>
                                 </div>
                                 

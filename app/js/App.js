@@ -19,6 +19,7 @@ var Notifications = require('./pages/Notifications.js');
 var Login = require('./pages/Login.js');
 var Signup = require('./pages/Signup.js');
 var ForgotPassword = require('./pages/ForgotPassword.js');
+var TermsConditions = require('./pages/TermsConditions.js');
 var NotFound = require('./pages/NotFound.js');
 
 class App extends Component {
@@ -45,6 +46,7 @@ class App extends Component {
                             <Route path='/login' component={Login} />
                             <Route path='/signup' component={Signup} />
                             <Route path='/forgot' component={ForgotPassword} />
+                            <Route path='/terms' component={TermsConditions} />
                             <Route component={NotFound} />
                         </Switch>
                         <Footer />

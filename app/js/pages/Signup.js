@@ -31,7 +31,7 @@ class Signup extends React.Component {
                             </div>
                             <div className='form__field'>
                                 <input type='checkbox' id='agree' />
-                                <label htmlFor='agree'>I accept <NavLink to='/'>Terms and Conditions</NavLink></label>
+                                <label htmlFor='agree'>I accept <NavLink to='/terms'>Terms and Conditions</NavLink></label>
                             </div>
                             <div className='form__btns'>
                                 <button className='btn btn-primary btn--middle btn-signup'>Sign Up</button>

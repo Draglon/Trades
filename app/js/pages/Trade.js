@@ -27,7 +27,9 @@ class Trade extends React.Component{
 
                             <div className='trading__item'>
                                 <div className='tickets'>
-                                    <div className='tickets'></div>
+                                    <div className='tickets__search icon-search'>
+                                        <input type='text' placeholder='Search' />
+                                    </div>
                                     <nav className='tickets__top-pair'>
                                         <a className='tickets__btn active'>Избранное</a>
                                         <a className='tickets__btn'>BTC</a>

@@ -147,7 +147,7 @@ class Settings extends React.Component {
                                             <label className='form__label'>IP-адресс или CIDR</label>
                                             <div className='form__field-input flex-space-between'>
                                                 <div style={{width: '70%'}}><input type='text' value='159.224.194.43' /></div>
-                                                <div style={{width: '30%'}}><button class='btn btn-primary btn--middle'>Добавить</button></div>
+                                                <div style={{width: '30%'}}><button className='btn btn-primary btn--middle'>Добавить</button></div>
                                             </div>
                                             <div className='form__example'>159.224.194.43</div>
                                         </div>

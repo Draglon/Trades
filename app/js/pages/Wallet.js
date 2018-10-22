@@ -270,28 +270,28 @@ class Wallet extends React.Component{
                                             <label className='form__label'>Доступно для вывода</label>
                                             <div className='form__field-input'>
                                                 <input type='text' value='3206.75824'/>
-                                                <span class='payments__coin'>DOGE</span>
+                                                <span className='payments__coin'>DOGE</span>
                                             </div>
                                         </div>
                                         <div className='form__field'>
                                             <label className='form__label'>Сумма вывода</label>
                                             <div className='form__field-input'>
                                                 <input type='text' value='300' />
-                                                <span class='payments__coin'>DOGE</span>
+                                                <span className='payments__coin'>DOGE</span>
                                             </div>
                                         </div>
                                         <div className='form__field'>
                                             <label className='form__label'>Вы получите</label>
                                             <div className='form__field-input'>
                                                 <input type='text' value='299' />
-                                                <span class='payments__coin'>DOGE</span>
+                                                <span className='payments__coin'>DOGE</span>
                                             </div>
                                         </div>
                                         <div className='form__field'>
                                             <label className='form__label'>Остаток на счете</label>
                                             <div className='form__field-input'>
                                                 <input type='text' value='2906.75824' />
-                                                <span class='payments__coin'>DOGE</span>
+                                                <span className='payments__coin'>DOGE</span>
                                             </div>
                                         </div>
                                         <div className='form__field'>

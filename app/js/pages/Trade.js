@@ -172,7 +172,7 @@ class Trade extends React.Component{
 
                                     <div className='market__forms'>
                                         <div className='market__buy'>
-                                            <h4 class='market__title'>Покупка, ADA</h4>
+                                            <h4 className='market__title'>Покупка, ADA</h4>
                                             <form className='form'>
                                                 <div className='form__field'>
                                                     <label className='form__label'>Количество</label>

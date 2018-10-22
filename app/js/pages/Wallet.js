@@ -14,15 +14,15 @@ class Wallet extends React.Component{
                                     <ul className='bills__list'>
                                         <li className='bills__item'>
                                             <input type='checkbox' className='bills__checkbox' id='billsCheckbox_1' />
-                                            <label className='bills__checkbox-label' for='billsCheckbox_1'>Доллар США, USD</label>
+                                            <label className='bills__checkbox-label' htmlFor='billsCheckbox_1'>Доллар США, USD</label>
                                         </li>
                                         <li className='bills__item'>
                                             <input type='checkbox' className='bills__checkbox' id='billsCheckbox_2' />
-                                            <label className='bills__checkbox-label' for='billsCheckbox_2'>Доллар США, USD</label>
+                                            <label className='bills__checkbox-label' htmlFor='billsCheckbox_2'>Доллар США, USD</label>
                                         </li>
                                         <li className='bills__item'>
                                             <input type='checkbox' className='bills__checkbox' id='billsCheckbox_3' />
-                                            <label className='bills__checkbox-label' for='billsCheckbox_3'>Доллар США, USD</label>
+                                            <label className='bills__checkbox-label' htmlFor='billsCheckbox_3'>Доллар США, USD</label>
                                         </li>
                                     </ul>
                                 </div>

@@ -6,6 +6,7 @@ var SettingsApiKey = require('../settings/ApiKey.js');
 var SettingsSecurity = require('../settings/Security.js');
 var SettingsPassword = require('../settings/Password.js');
 var SettingsIpAddress = require('../settings/IpAddress.js');
+var SettingsSessions = require('../settings/Sessions.js');
 
 class Settings extends React.Component {
     render() {
@@ -21,6 +22,7 @@ class Settings extends React.Component {
                             <SettingsSecurity />
                             <SettingsPassword />
                             <SettingsIpAddress /> */}
+                            <SettingsSessions />
                         </article>
                     </div>
                 </section>

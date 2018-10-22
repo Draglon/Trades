@@ -1,4 +1,5 @@
 var React = require('react');
+import {NavLink, BrowserRouter}  from 'react-router-dom';
 
 class Signup extends React.Component {
     render() {
@@ -30,10 +31,13 @@ class Signup extends React.Component {
                             </div>
                             <div className='form__field'>
                                 <input type='checkbox' id='agree' />
-                                <label htmlFor='agree'>I accept <a href='#'>Terms and Conditions</a></label>
+                                <label htmlFor='agree'>I accept <NavLink to='/'>Terms and Conditions</NavLink></label>
                             </div>
                             <div className='form__btns'>
                                 <button className='btn btn-primary btn--middle btn-signup'>Sign Up</button>
+                            </div>
+                            <div className='form__field'>
+                                <div className='login__text'>Already Registered? <NavLink className='login__link' to='/login'>Log in</NavLink></div>
                             </div>
                         </form>
                     </div>

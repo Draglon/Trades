@@ -5,9 +5,9 @@ class Login extends React.Component {
     render() {
         return (
             <main className='main'>
-                <section className='section login'>
+                <section className='section forgot'>
                     <div className='wrapper'>
-                        <h2 className='login__title'>Login</h2>
+                        <h2 className='forgot__title'>Login</h2>
                         <form className='form'>
                             <div className='form__field form__field--error'>
                                 <input type='email' />
@@ -15,15 +15,11 @@ class Login extends React.Component {
                                 <span className='form__field-error'>Error</span>
                             </div>
                             <div className='form__field'>
-                                <input type='password' />
-                                <i className='icon-key'></i>
-                                <span className='form__field-error'>Error</span>
+                                <div className='login__text'>Not registered yet? <NavLink className='login__link' to='/signup'>Create account</NavLink></div>
                             </div>
-                            <div className='form__btns flex-space-between'>
-                                <NavLink className='login__link' to='/signup'>Forgot password?</NavLink>
-                                <button className='btn btn-primary btn--middle btn-login'>Login</button>
+                            <div className='form__btns'>
+                                <button className='btn btn-primary btn--middle btn-login'>Forgot</button>
                             </div>
-                            <div className='login__text'>Not registered yet? <NavLink className='login__link' to='/signup'>Create accaunt</NavLink></div>
                         </form>
                     </div>
                 </section>

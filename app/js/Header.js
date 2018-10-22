@@ -53,7 +53,7 @@ class Header extends React.Component {
 
                             <div className='profile'>
                                 <div className='profile__balance'>
-                                    <div className='profile__balance-btn'>0.11215466 BTC</div>
+                                    <div className='profile__balance-btn'><i className='icon-credit-card'></i>0.11215466 BTC</div>
                                     <div className='profile__wallet'>
                                         <ul className='profile__wallet-list'>
                                             <li className='profile__wallet-item'>

@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 
 import App from './js/App';
 import './styles/style.less';
-import reducer from './js/redusers'
+import reducer from './js/redusers';
 
 const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() );
 

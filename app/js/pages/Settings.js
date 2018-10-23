@@ -17,11 +17,11 @@ class Settings extends React.Component {
                         <SettingsAside />
 
                         <article className='settings__content'>
-                            {/* <SettingsNotification />
+                            <SettingsNotification />
                             <SettingsApiKey />
                             <SettingsSecurity />
                             <SettingsPassword />
-                            <SettingsIpAddress /> */}
+                            <SettingsIpAddress />
                             <SettingsSessions />
                         </article>
                     </div>
